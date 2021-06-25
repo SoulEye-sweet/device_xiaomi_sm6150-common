@@ -1,5 +1,6 @@
 # Bluetooth
 vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.twsplus=true
 
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
