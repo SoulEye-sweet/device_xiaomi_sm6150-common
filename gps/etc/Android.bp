@@ -54,13 +54,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "gnss@2.0-xtwifi-client.policy",
-    vendor: true,
-    relative_install_path: "seccomp_policy",
-    src: "seccomp_policy/gnss@2.0-xtwifi-client.policy",
-}
-
-prebuilt_etc {
     name: "gnss@2.0-xtwifi-inet-agent.policy",
     vendor: true,
     relative_install_path: "seccomp_policy",
