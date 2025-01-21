@@ -4,12 +4,6 @@
 //
 
 prebuilt_etc {
-    name: "apdr.conf",
-    vendor: true,
-    src: "apdr.conf",
-}
-
-prebuilt_etc {
     name: "flp.conf",
     vendor: true,
     src: "flp.conf",
