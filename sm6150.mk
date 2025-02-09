@@ -94,6 +94,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,camera,override_format_from_reserved,true)
 $(call soong_config_set,camera,package_name,com.xiaomi.sessionparams.clientName)
 $(call soong_config_set,camera,uses_miui_camera,true)
+$(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH):libcameraservice_extension.sm6150)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
