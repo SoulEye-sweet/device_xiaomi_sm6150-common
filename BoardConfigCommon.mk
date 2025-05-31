@@ -56,19 +56,6 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
-
-DEVICE_MANIFEST_FILE += \
-    device/xiaomi/sm6150-common/configs/hidl/manifest.xml \
-    hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
-
-DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-ODM_MANIFEST_FILES += $(COMMON_PATH)/configs/hidl/manifest-qva.xml
-
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
