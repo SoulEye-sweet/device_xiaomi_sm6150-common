@@ -283,4 +283,7 @@
        <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
        <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
     </string-array>
+
+    <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
+    <item name="config_highResTaskSnapshotScale" format="float" type="dimen">0.7</item>
 </resources>
