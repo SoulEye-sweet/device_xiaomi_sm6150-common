@@ -392,6 +392,7 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
     WifiOverlay \
+    NcmTetheringOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
