@@ -7,3 +7,6 @@ debug.hwui.skia_use_perfetto_track_events=false
 
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# eSIM
+masterclear.allow_retain_esim_profiles_after_fdr=true
