@@ -337,7 +337,7 @@ function configure_memory_parameters() {
 
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
-    echo 1 > /proc/sys/vm/watermark_scale_factor
+    echo 120 > /proc/sys/vm/watermark_scale_factor
 
     # Disable the feature of watermark boost for 8G and below device
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
