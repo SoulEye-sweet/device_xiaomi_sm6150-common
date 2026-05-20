@@ -20,6 +20,9 @@ persist.sys.fuse.passthrough.enable=true
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=15
 
+# Logs
+persist.log.tag.ACDB-LOADER=S
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
