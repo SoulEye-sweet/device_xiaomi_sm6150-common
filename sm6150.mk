@@ -266,8 +266,15 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.usb.rc \
-    init.target.rc \
     ueventd.qcom.rc
+
+ifeq ($(WITH_GMS),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.target_ext4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
+endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
