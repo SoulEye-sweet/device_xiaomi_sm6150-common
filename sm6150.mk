@@ -268,6 +268,7 @@ PRODUCT_PACKAGES += \
     init.qti.early_init.sh
 
 PRODUCT_PACKAGES += \
+    init.qcom.composer.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.usb.rc \
