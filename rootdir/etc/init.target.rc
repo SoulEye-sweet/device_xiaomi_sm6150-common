@@ -34,6 +34,15 @@ on early-init
     setprop vendor.usb.product_string ${ro.product.vendor.model}
 
 on init
+    # Let surfaceflinger use the big cluster
+    mkdir /dev/cpuset/surfaceflinger 0775 system system
+    write /dev/cpuset/surfaceflinger/cpus 0-7
+    write /dev/cpuset/surfaceflinger/mems 0
+    chown system system /dev/cpuset/surfaceflinger/tasks
+    chown system system /dev/cpuset/surfaceflinger/cgroup.procs
+    chmod 0664 /dev/cpuset/surfaceflinger/tasks
+    chmod 0664 /dev/cpuset/surfaceflinger/cgroup.procs
+
     # Goodix fingerprint
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
